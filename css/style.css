@@ -132,16 +132,16 @@ a {
 
 /* ===== Navbar ===== */
 #mainNav {
-  background: rgba(27, 67, 50, 0.96);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(10px);
   padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(15, 51, 32, 0.1);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 #mainNav.scrolled {
-  background: rgba(27, 67, 50, 0.98);
-  box-shadow: var(--shadow-md);
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-brand {
@@ -149,7 +149,7 @@ a {
   align-items: center;
   gap: 0.4rem;
   font-size: 1.45rem;
-  color: var(--color-white) !important;
+  color: var(--color-primary-dark) !important;
   line-height: 1.25;
 }
 
@@ -168,11 +168,11 @@ a {
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-primary);
 }
 
 .nav-link {
-  color: #ffffff !important;
+  color: var(--color-text) !important;
   font-weight: 600;
   font-size: 1.05rem;
   padding: 0.55rem 1rem !important;
@@ -182,8 +182,19 @@ a {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--color-white) !important;
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-primary-dark) !important;
+  background: rgba(27, 94, 59, 0.08);
+}
+
+@media (max-width: 991.98px) {
+  #mainNav .navbar-collapse {
+    background: var(--color-white);
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(15, 51, 32, 0.1);
+    box-shadow: var(--shadow-sm);
+  }
 }
 
 /* ===== Floating Call (Mobile) ===== */

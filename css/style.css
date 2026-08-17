@@ -535,6 +535,17 @@ a {
   font-weight: 800;
   color: var(--color-primary-dark);
   letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
+
+.contact-phone-line {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.contact-phone-line:hover .contact-value {
+  color: var(--color-primary);
 }
 
 .contact-action {
